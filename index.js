@@ -33,3 +33,7 @@ function runQuiz() {
         } }
 
     }
+
+    var score = (numOfCorrect / 5)*100
+    var roundedScore = Math.round(score)
+    alert("Your final score: " + roundedScore +"%")
