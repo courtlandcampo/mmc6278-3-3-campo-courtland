@@ -23,9 +23,13 @@ var questionsArr = [
     }
 ];
 
+var numOfCorrect = 0
 function runQuiz() {
-    for (var i = 0; i <= questionsArr.length; i++) {
-        var question = questionsArr[i]
+    for (var i = 0; i < questionsArr.length; i++) {
+        var quizQuestion = questionsArr[i]
+        var answer = confirm(quizQuestion)
+        if (answer) {
+            numOfCorrect++
+        } }
 
-        }
     }
