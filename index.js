@@ -20,6 +20,10 @@ var questionsArr = [
     {
         question: 'Anne Hathaway is in "La La Land" (2016)',
         answer: false
+    },
+    {
+        question: 'Anne Hathaway is in "Friends With Benefits" (2011)',
+        answer: false
     }
 ];
 
@@ -29,13 +33,12 @@ function runQuiz() {
         var quizQuestion = questionsArr[i].question
         var answer = confirm(quizQuestion)
         // if var-answer matches questionsArr-answer then add one to var-numOfCorrect
-        if (answer == questionsArr[i].answer) {
+        if (answer === questionsArr[i].answer) {
             numOfCorrect++
         } }
 
-        var score = (numOfCorrect / 5)*100
+        var score = (numOfCorrect / questionsArr.length)*100
         var roundedScore = Math.round(score)
     
         alert("Your final score: " + roundedScore +"%")
-    }
-
+}
