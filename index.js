@@ -1,9 +1,4 @@
 // Your code here
-function runQuiz() {
-
-}
-
-console.log(questionsArr)
 
 var questionsArr = [
     {
@@ -27,3 +22,10 @@ var questionsArr = [
         answer: true
     }
 ];
+
+function runQuiz() {
+    for (var i = 0; i <= questionsArr.length; i++) {
+        var question = questionsArr[i]
+
+        }
+    }
