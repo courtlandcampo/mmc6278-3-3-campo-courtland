@@ -27,8 +27,8 @@ var questionsArr = [
     }
 ];
 
-var numOfCorrect = 0
 function runQuiz() {
+    var numOfCorrect = 0
     for (var i = 0; i < questionsArr.length; i++) {
         var quizQuestion = questionsArr[i].question
         var answer = confirm(quizQuestion)
